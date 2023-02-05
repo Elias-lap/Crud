@@ -1,0 +1,24 @@
+
+
+
+textarea{
+    resize: none;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+}
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+    .search{
+        margin-top: 41px !important;
+    }
+}
+@media (max-width: 768px){
+    
+    .search{
+        margin-top: 41px !important;
+    }
+}

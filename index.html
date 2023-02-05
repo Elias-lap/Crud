@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  
+
+    <section id="systym-managment" class=" ">
+        <div class=" container">
+            <h2 class=" m-auto w-50 my-4  ">Products Managment Systym</h2>
+            <label for="productName" class=" fs-4 "> productName :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productName">
+            <label for="productPrice" class=" fs-4 "> productPrice :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productPrice">
+            <label for="productCategory" class=" fs-4 "> productCategory :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productCategory">
+            <label for="productDesc" class=" fs-4 "> productDesc:</label>
+            <textarea type="text" class=" form-control w-75 my-3 " id="productDesc"></textarea>
+    
+            <button id="Addbroduct" onclick="addproduct()" class=" btn btn-lg btn-outline-light d-block" >Add product</button>
+         
+            
+    
+        </div>
+        <div class=" w-50 m-auto">
+            <input oninput="searchProduct(this.value)"  type="text" placeholder="Search here .." class=" form-control  w-75  search"  > 
+
+        </div>
+        
+        <table class="table text-white my-5 " id=" table">
+           <thead class=" ">
+            <th>Index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Desc</th>
+            <th></th>
+            <th></th>
+            
+            
+           </thead>
+           <tbody id="tablebody">
+          
+           </tbody>
+        </table>
+
+    </section>
+    <section id="systym-managment" class=" ">
+        <div class=" container">
+            <h2 class=" m-auto w-50 my-4  ">Products Managment Systym</h2>
+            <label for="productName" class=" fs-4 "> productName :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productName">
+            <label for="productPrice" class=" fs-4 "> productPrice :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productPrice">
+            <label for="productCategory" class=" fs-4 "> productCategory :</label>
+            <input type="text" class=" form-control w-75 my-3 " id="productCategory">
+            <label for="productDesc" class=" fs-4 "> productDesc:</label>
+            <textarea type="text" class=" form-control w-75 my-3 " id="productDesc"></textarea>
+    
+            <button id="Addbroduct" onclick="addproduct()" class=" btn btn-lg btn-outline-light d-block" >Add product</button>
+         
+            
+    
+        </div>
+        <div class=" w-50 m-auto">
+            <input oninput="searchProduct(this.value)"  type="text" placeholder="Search here .." class=" form-control  w-75  search"  > 
+
+        </div>
+        
+        <table class="table text-white my-5 " id=" table">
+           <thead class=" ">
+            <th>Index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Desc</th>
+            <th></th>
+            <th></th>
+            
+            
+           </thead>
+           <tbody id="tablebody">
+          
+           </tbody>
+        </table>
+
+    </section>
+    
+
+
+
+
+
+    
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
