@@ -72,17 +72,41 @@ function deleteproduct(productIndex){
   displayProduct(productsContainer);
 }
 
-function searchProduct (term){
+// function searchProduct (term){
 
-  var matchedProduct = []
-  for( var i=0 ; i < productsContainer.length ; i++){
-    if(productsContainer[i].name.toLowerCase().includes(term.toLowerCase())===true)
-    {
-      matchedProduct.push(productsContainer[i])
+//   var matchedProduct = []
+//   for( var i=0 ; i < productsContainer.length ; i++){
+//     if(productsContainer[i].name.toLowerCase().includes(term.toLowerCase())===true)
+//     {
+//       matchedProduct.push(productsContainer[i])
+//     }
+//   }
+//   displayProduct(matchedProduct)
+// }
+
+function searchProduct (term){ 
+  var box1=``
+  for (let index = 0; index <productsContainer.length; index++) {
+    if(productsContainer[index].name.toLowerCase().includes(term.toLowerCase())===true){
+      box1 +=` <tr>
+      <td>${index}</td>
+      <td>${productsContainer[index].name.replace(term,'<span>'+term+'</span>')}</td>
+      <td>${productsContainer[index].price}</td>
+      <td>${productsContainer[index].category}</td>
+      <td>${productsContainer[index].desc}</td>
+      <td><button onclick="setFormUpdate(${index})" class=" btn btn-outline-primary btn-sm">Update</button></td>
+      <td><button  onclick="deleteproduct(${index});" class=" btn btn-outline-danger btn-sm">Delete</button></td>
+     </tr>`;
     }
+    document.getElementById('tablebody').innerHTML=box1;
+
+    }
+    
   }
-  displayProduct(matchedProduct)
-}
+
+
+
+
 var count='0'
 function setFormUpdate (index){
   count=index
